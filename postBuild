@@ -6,4 +6,4 @@ mamba create \
   --prefix ${NB_PYTHON_PREFIX}
 mamba clean -yaf # clean up downloaded files and indexes
 
-jupyter serverextension enable --py nbgitpuller --sys-prefix
+jupyter server extension enable --py nbgitpuller --sys-prefix
