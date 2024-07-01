@@ -8,7 +8,7 @@ mamba clean -yaf # clean up downloaded files and indexes
 
 git clone https://github.com/WorldCereal/presto-worldcereal.git
 cd presto-worldcereal
-pip install --no-dependencie .
+pip install --no-dependencies .
 cd ..
 
 git clone https://github.com/WorldCereal/worldcereal-classification.git
