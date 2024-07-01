@@ -8,7 +8,7 @@ set -eux
 
 export MKL_INTERFACE_LAYER=LP64
 
-source activate notebook  # Activate the conda environment before pip installing
+/srv/conda/bin/activate notebook  # Activate the conda environment before pip installing
 
 # git clone https://github.com/WorldCereal/presto-worldcereal.git
 # cd presto-worldcereal
