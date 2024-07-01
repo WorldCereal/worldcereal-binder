@@ -20,6 +20,6 @@ cd worldcereal-classification
 pip install --no-dependencies .
 cd ..
 
-conda deactivate
+/srv/conda/bin/conda deactivate
 
 jupyter server extension enable --py nbgitpuller --sys-prefix
