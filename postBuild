@@ -6,6 +6,8 @@ mamba create \
   --prefix ${NB_PYTHON_PREFIX}
 mamba clean -yaf # clean up downloaded files and indexes
 
+export MKL_INTERFACE_LAYER=LP64
+
 source activate notebook  # Activate the conda environment before pip installing
 
 git clone https://github.com/WorldCereal/presto-worldcereal.git
