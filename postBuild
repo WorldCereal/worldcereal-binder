@@ -6,6 +6,8 @@ mamba create \
   --prefix ${NB_PYTHON_PREFIX}
 mamba clean -yaf # clean up downloaded files and indexes
 
+source activate notebook  # Activate the conda environment before pip installing
+
 git clone https://github.com/WorldCereal/presto-worldcereal.git
 cd presto-worldcereal
 pip install --no-dependencies .
@@ -15,5 +17,7 @@ git clone https://github.com/WorldCereal/worldcereal-classification.git
 cd worldcereal-classification
 pip install --no-dependencies .
 cd ..
+
+conda deactivate
 
 jupyter server extension enable --py nbgitpuller --sys-prefix
