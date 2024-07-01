@@ -8,12 +8,12 @@ mamba clean -yaf # clean up downloaded files and indexes
 
 git clone https://github.com/WorldCereal/presto-worldcereal.git
 cd presto-worldcereal
-pip install .
+pip install --no-dependencie .
 cd ..
 
 git clone https://github.com/WorldCereal/worldcereal-classification.git
 cd worldcereal-classification
-pip install .
+pip install --no-dependencies .
 cd ..
 
 jupyter server extension enable --py nbgitpuller --sys-prefix
