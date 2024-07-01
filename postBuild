@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 set -eux
-mamba create \
-  -y \
-  --file conda-linux-64.lock \
-  --prefix ${NB_PYTHON_PREFIX}
-mamba clean -yaf # clean up downloaded files and indexes
+# mamba create \
+#   -y \
+#   --file conda-linux-64.lock \
+#   --prefix ${NB_PYTHON_PREFIX}
+# mamba clean -yaf # clean up downloaded files and indexes
 
 export MKL_INTERFACE_LAYER=LP64
 
 source activate notebook  # Activate the conda environment before pip installing
 
-git clone https://github.com/WorldCereal/presto-worldcereal.git
-cd presto-worldcereal
-pip install --no-dependencies .
-cd ..
+# git clone https://github.com/WorldCereal/presto-worldcereal.git
+# cd presto-worldcereal
+# pip install --no-dependencies .
+# cd ..
 
 git clone https://github.com/WorldCereal/worldcereal-classification.git
 cd worldcereal-classification
