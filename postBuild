@@ -6,4 +6,14 @@ mamba create \
   --prefix ${NB_PYTHON_PREFIX}
 mamba clean -yaf # clean up downloaded files and indexes
 
+git clone https://github.com/WorldCereal/presto-worldcereal.git
+cd presto-worldcereal
+pip install .
+cd ..
+
+git clone https://github.com/WorldCereal/worldcereal-classification.git
+cd worldcereal-classification
+pip install .
+cd ..
+
 jupyter server extension enable --py nbgitpuller --sys-prefix
