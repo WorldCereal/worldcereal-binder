@@ -7,9 +7,6 @@ mamba create \
 mamba clean -yaf # clean up downloaded files and indexes
 
 jupyter server extension enable --py nbgitpuller --sys-prefix
-jupyter contrib nbextension install --user
-jupyter nbextension enable --py widgetsnbextension
-jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.38 --minimize=False
 
 export MKL_INTERFACE_LAYER=LP64
 
