@@ -20,6 +20,7 @@ dependencies:
   - openeo=0.29.0
   - pip=24.0
   - pyarrow=16.1.0
+  - pydantic>=2.7
   - python=3.10
   - python-duckdb=1.0.0
   - pytorch=2.3.0

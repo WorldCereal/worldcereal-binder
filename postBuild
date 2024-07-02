@@ -19,5 +19,5 @@ cd ..
 
 git clone https://github.com/WorldCereal/worldcereal-classification.git
 cd worldcereal-classification
-pip install --no-dependencies --editable .
+pip install --editable .
 cd ..
