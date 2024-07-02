@@ -7,3 +7,19 @@ mamba create \
 mamba clean -yaf # clean up downloaded files and indexes
 
 jupyter server extension enable --py nbgitpuller --sys-prefix
+
+export MKL_INTERFACE_LAYER=LP64
+
+/srv/conda/bin/activate notebook  # Activate the conda environment before pip installing
+
+mamba install pip -y
+
+git clone https://github.com/WorldCereal/presto-worldcereal.git
+cd presto-worldcereal
+pip install --no-dependencies .
+cd ..
+
+git clone https://github.com/WorldCereal/worldcereal-classification.git
+cd worldcereal-classification
+pip install --no-dependencies .
+cd ..
